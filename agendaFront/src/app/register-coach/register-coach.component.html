@@ -1,0 +1,16 @@
+<h1 style="margin: 0">Register</h1>
+<form>
+  <label for="firstname">Firstname:</label>
+  <input type="text" name="firstname" [(ngModel)]="firstname">
+  <label for="lastname">lastname:</label>
+  <input type="text" name="lastname" [(ngModel)]="lastname">
+  <label for="coachname">Coachname:</label>
+  <input type="text" name="coachname" [(ngModel)]="coachname">
+  <label for="email">email:</label>
+  <input type="text" name="email" [(ngModel)]="email">
+  <label for="age">Age:</label>
+  <input type="text" name="age" [(ngModel)]="age">
+  <label for="password">Password:</label>
+  <input type="password" name="password" [(ngModel)]="password">
+  <button type="button" (click)="register()">Register</button>
+</form>

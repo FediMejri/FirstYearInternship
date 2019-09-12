@@ -1,0 +1,9 @@
+<h1 style="margin: 0">Sign In</h1>
+<form>
+    <label for="email">Email:</label><br />
+    <input type="email" name="email" [(ngModel)]="email" /><br />
+    <label for="password">Password:</label><br />
+    <input type="password" name="password" [(ngModel)]="password" /><br />
+    <button type="button" (click)="login()">Login as simple user</button>
+    <button type="button" (click)="loginascoach()">Login as a coach</button>
+</form>

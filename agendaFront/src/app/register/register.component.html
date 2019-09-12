@@ -1,0 +1,25 @@
+<h1 style="margin: 0">Register</h1>
+<form>
+  <label for="firstname">Firstname:</label>
+  <input type="text" name="firstname" [(ngModel)]="firstname">
+  <label for="lastname">lastname:</label>
+  <input type="text" name="lastname" [(ngModel)]="lastname">
+  <label for="username">Username:</label>
+  <input type="text" name="username" [(ngModel)]="username">
+  <label for="email">email:</label>
+  <input type="text" name="email" [(ngModel)]="email">
+  <label for="age">Age:</label>
+  <input type="text" name="age" [(ngModel)]="age">
+  <label for="gander">Gender:</label>
+  <input type="text" name="gender" [(ngModel)]="gender">
+  <label for="profession">profession:</label>
+  <input type="text" name="profession" [(ngModel)]="profession">
+  <label for="nationality">Nationality:</label>
+  <input type="text" name="nationality" [(ngModel)]="nationality">
+  <label for="password">Password:</label>
+  <input type="password" name="password" [(ngModel)]="password">
+  <button type="button" (click)="register()">Register</button>
+</form>
+<p>
+  <a [routerLink]="['/login']">Login</a>
+</p>
