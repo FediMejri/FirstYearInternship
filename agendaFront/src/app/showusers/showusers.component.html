@@ -1,0 +1,16 @@
+<table border="1" align="center">
+  <tr>
+    <td>Username</td>
+    <td>Email</td>
+    <td>Age</td>
+    <td>Profession</td>
+    <td>Nationality</td>
+  </tr>
+  <tr *ngFor="let User of Users">
+    <td>{{User.username}}</td>
+    <td>{{User.email}}</td>
+    <td>{{User.age}}</td>
+    <td>{{User.profession}}</td>
+    <td>{{User.nationality}}</td>
+  </tr>
+</table>

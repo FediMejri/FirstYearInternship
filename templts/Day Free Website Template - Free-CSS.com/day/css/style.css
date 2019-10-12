@@ -127,8 +127,8 @@ a:hover {
 }
 
 .navbar-default {
-	background-color: #65AAF0;
-	border-color:#65AAF0;
+	background-color: #65f067;
+	border-color:#65f067;
 }
 
 /*===========================
@@ -928,7 +928,7 @@ textarea#message{
 ============================ */
 footer {
 	padding:50px;
-	background:#65AAF0;
+	background:#65f067;
 }
 
 footer p {
@@ -1075,3 +1075,14 @@ ul.social-network li a {
 	font-size:12px;
 	text-shadow:none;
 } 
+#abdallah{
+  height:150px;
+  width:150px;
+}
+#fedi{
+  height:70px;
+  width:100px;
+}
+#mohsen{
+  background-color:green;
+}

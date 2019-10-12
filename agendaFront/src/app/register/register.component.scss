@@ -1,0 +1,104 @@
+.social{
+    background:#000;
+    padding:10px 0;
+}
+.social-wrapper .social-icon a{
+    float:left;
+    font-size:13px;
+    color:#fff;
+}
+.social-wrapper .social-icon a:hover{
+    color:#82ca9c;
+}
+.social-wrapper .social-icon a i{
+    padding-right:10px;
+}
+.social-wrapper .social-contact{
+    float:right;
+    font-size:13px;
+}
+.social-wrapper .social-contact a{
+    color:#fff;
+    margin-right:20px;
+}
+.social-wrapper .social-contact a:hover{
+    color:#82ca9c;
+}
+.social-wrapper .social-contact a i{
+    padding-right:5px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius:0;
+    padding-top:20px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #82ca9c;
+    background-color:transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-size:14px;
+    font-weight:600;
+	text-transform:uppercase;
+}
+.navbar-default .navbar-nav li a :hover{
+    color: #82ca9c;
+}
+.navbar-default .collapse .login a{
+    color: #82ca9c;
+    border: 1px solid #82ca9c;
+    border-radius: 20px;
+    padding: 4px 30px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 30px;
+    display:inline-block;
+    overflow:hidden;
+}
+.navbar-default .collapse .login:hover a{
+    background-color: rgba(0, 173, 62, 0.75);
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #82ca9c;
+    background-color: transparent;
+}
+.contact-page{
+    padding-top: 0;
+    background:#fff;
+    margin-bottom:30px;
+  }
+  
+  .contact-page h2 {
+      text-transform:uppercase;
+      font-weight:550;
+      font-size:24px;
+      margin-bottom:30px;
+  }
+  
+  .contact-page p {	
+      margin-bottom:30px;
+  }
+  
+  .contact-page .contact-form 
+  .form-group label {
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .contact-page .contact-wrap {
+    margin-top: 20px;
+  }
+  .form-group .form-control {
+    padding: 7px 12px;
+    border-color:#f2f2f2;
+    box-shadow: none;
+    border-radius:0;
+    width:400px;
+    background-color:grey;
+  }
+  label{
+   color:black solid;   
+  }

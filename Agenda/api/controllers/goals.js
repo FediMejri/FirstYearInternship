@@ -1,8 +1,8 @@
 const Goal = require('../models/goal');
 
 exports.goals_get_all = (req,res,next)=>{
-    Goal.find({owner: req.body.owner})
-    .select('titre status').
+    Goal.find()
+    .select('titre startDate endDate owner').
     exec()
     .then(docs =>{
         const response={
@@ -10,9 +10,10 @@ exports.goals_get_all = (req,res,next)=>{
             goals : docs.map(doc =>{
                 return{
                     id : doc._id,
-                    goal : doc.titre,
-                    status : doc.status,
-                    comment : doc.comment
+                    titre : doc.titre,
+                    startDate : doc.startDate,
+                    endDate: doc.endDate,
+                    owner: doc.owner
                 }
             })
         };
@@ -28,7 +29,6 @@ exports.create_goal = (req,res,next)=>{
         titre : req.body.titre,
         startDate : req.body.startDate,
         endDate : req.body.endDate,
-        status : req.body.status,
         owner : req.body.owner
     });
     goal.save()
@@ -37,7 +37,6 @@ exports.create_goal = (req,res,next)=>{
             titre : result.titre,
             startDate : result.startDate,
             endDate : result.endDate,
-            status : result.status,
             owner : result.owner
         };
         return res.status(200).json(response);

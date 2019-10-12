@@ -20,7 +20,8 @@ export class RegisterCoachComponent implements OnInit {
 
   public register(){
     this.api.registerCoach(this.firstname,this.lastname,this.coachname,this.email,this.age,this.password).subscribe(result=>{
-      console.log(result);
+      alert(result['message']);
+      this.router.navigate(['/home']);
     })
   }
 

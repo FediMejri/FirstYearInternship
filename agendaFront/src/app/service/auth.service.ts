@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {IUser} from '../user';
+import {IGoal} from '../goal';
+import {ICoach} from '../coach';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,6 +11,7 @@ import { Observable } from 'rxjs';
 export class AuthService {
   userurl="http://localhost:3000/users/";
   coachurl="http://localhost:3000/coachs/";
+  goalurl="http://localhost:3000/goals/";
 
   constructor(private http:HttpClient) { }
   public register(firstname,lastname,username,email,age,gender,profession,nationality,password){
@@ -22,5 +25,17 @@ export class AuthService {
   }
   public loginCoach(email,password){
     return this.http.post(this.coachurl+"login",{email:email,password:password});
+  }
+  public creategoal(titre,startDate,endDate,owner){
+    return this.http.post(this.goalurl,{titre:titre,startDate:startDate,endDate:endDate,owner:owner});
+  }
+  public getgoals(): Observable<IGoal[]>{
+    return this.http.get<IGoal[]>(this.goalurl);
+  }
+  public getusers(): Observable<IUser[]>{
+    return this.http.get<IUser[]>(this.userurl);
+  }
+  public getcoachs(): Observable<ICoach[]>{
+    return this.http.get<ICoach[]>(this.coachurl);
   }
 }

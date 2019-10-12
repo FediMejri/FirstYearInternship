@@ -10,13 +10,25 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterCoachComponent } from './register-coach/register-coach.component';
 import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
+import { CoachsComponent } from './coachs/coachs.component';
+import { HomeComponent } from './home/home.component';
+import { GoalsComponent } from './goals/goals.component';
+import { ShowgoalsComponent } from './showgoals/showgoals.component';
+import { ShowusersComponent } from './showusers/showusers.component';
+import { ShowcoachsComponent } from './showcoachs/showcoachs.component';
 
 let routes = [
-  {path:"", redirectTo:"/login", pathMatch:"full"},
+  {path:"", redirectTo:"/home", pathMatch:"full"},
   { path: "register", component: RegisterComponent },
   {path: "register-coach", component: RegisterCoachComponent},
   {path: "login", component: LoginComponent},
-  {path:"users",component: UsersComponent}
+  {path:"users",component: UsersComponent},
+  {path:"coachs",component: CoachsComponent},
+  {path:"home",component: HomeComponent},
+  {path:"goals",component:GoalsComponent},
+  {path:"showgoals",component:ShowgoalsComponent},
+  {path:"showusers",component:ShowusersComponent},
+  {path:"showcoachs",component:ShowcoachsComponent}
 ];
 
 @NgModule({
@@ -25,7 +37,13 @@ let routes = [
     RegisterComponent,
     RegisterCoachComponent,
     LoginComponent,
-    UsersComponent
+    UsersComponent,
+    CoachsComponent,
+    HomeComponent,
+    GoalsComponent,
+    ShowgoalsComponent,
+    ShowusersComponent,
+    ShowcoachsComponent
   ],
   imports: [
     BrowserModule,

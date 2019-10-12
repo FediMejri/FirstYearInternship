@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   constructor(private api:AuthService, private router: Router) { }
   public login(){
     this.api.login(this.email,this.password).subscribe(result=>{
-      console.log(result);
       if (result['Auth'] == true){
         this.router.navigate(['/users']);
         localStorage.setItem('key', 'true');

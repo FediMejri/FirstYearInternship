@@ -1,0 +1,10 @@
+<h1>Create a goal</h1>
+<label>Titre*</label>
+<input type="text" name="titre" [(ngModel)]="titre" required>
+<label>StartDate*</label>
+<input type="text" name="startdate" [(ngModel)]="startDate" required>
+<label>EndDate*</label>
+<input type="text" name="enddate" [(ngModel)]="endDate" required>
+<label>Owner*</label>
+<input type="text" name="owner" [(ngModel)]="owner" required>
+<button type="submit" required (click)="creategoal()">Create</button>

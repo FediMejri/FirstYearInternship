@@ -23,7 +23,8 @@ export class RegisterComponent implements OnInit {
   constructor(private api:AuthService, private router:Router) { }
   public register(){
     this.api.register(this.firstname,this.lastname,this.username,this.email,this.age,this.gender,this.profession,this.nationality,this.password).subscribe(result=>{
-      console.log(result);
+      alert(result['message']);
+      this.router.navigate(['/home']);
     })
   }
   ngOnInit() {

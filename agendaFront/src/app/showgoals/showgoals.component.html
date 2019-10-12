@@ -1,0 +1,14 @@
+<table border="1" align="center">
+  <tr>
+    <td>Titre</td>
+    <td>Start Date</td>
+    <td>End Date</td>
+    <td>Owner</td>
+  </tr>
+  <tr *ngFor="let Goal of Goals" >
+    <td>{{Goal.titre}}</td>
+    <td>{{Goal.startDate}}</td>
+    <td>{{Goal.endDate}}</td>
+    <td>{{Goal.owner}}</td>
+  </tr>
+</table>

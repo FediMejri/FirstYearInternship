@@ -12,8 +12,8 @@ const goalSchema = mongoose.Schema({
     titre: {type: String, required: true},
     startDate: {type: String, required: true},
     endDate: {type:String, required: true},
-    status: {type: Boolean, required: true},
-    owner: {type : mongoose.Schema.Types.ObjectId, ref: 'User'},
+    status: {type: Boolean},
+    owner: {type : String},
     isActivated: Boolean,
     comment : [{type: commentSchema}]
 });

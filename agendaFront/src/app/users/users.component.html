@@ -1,1 +1,49 @@
-<button (click)="logout()">Log out </button>
+<div id="wrapper">
+    <div class="left side-menu">
+        <div class="sidebar-inner slimscrollleft">
+            <div class="user-details">
+                <div class="text-center">
+                    <img src="assets/img/fedi.jpg" alt="" class="rounded-circle">
+                </div>
+                <div class="user-info">
+                    <h4 class="font-16">Fedi Mejri</h4>
+                    <span class="text-muted user-status"><i class="fa fa-dot-circle-o text-success"></i> Online</span>
+                </div>
+            </div>
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="menu-title">Main</li>
+                    <li>
+                        <a class="waves-effect" href="showgoals" target="_blank">
+                            <span> Goals </span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a class="waves-effect" href="goals" target="_blank"><span>Create Goal</span></a>
+                    </li>
+                    <br>
+                    <li>
+                        <a class="waves-effect" href="showusers" target="_blank"><span>See users</span></a>
+                    </li>
+                    <br>
+                    <li>
+                        <a class="waves-effect" href="showcoachs" target="_blank"><span>See coaches</span></a>
+                    </li>
+                    <br>
+                    <li>
+                        <a class="waves-effect" (click)="logout()"><span>Log out</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-page">
+        <div class="content">
+            <div class="page-content-wrapper ">
+                <h1>Welcome to your Agenda</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
